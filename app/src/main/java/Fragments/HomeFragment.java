@@ -119,7 +119,7 @@ public class HomeFragment extends Fragment {
                     Log.e("tag2",response.toString());
 
                 }else{
-                    Log.e("tag","noooo success");
+                    Log.e("tag","no success");
 
                 }
 

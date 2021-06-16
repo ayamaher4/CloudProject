@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/details_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="وكالة نيوز الاخبارية"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/purple_500"
+            android:textSize="25sp"
+            android:layout_margin="12dp"
+            />
+        <TextView
+            android:id="@+id/details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text=" 7 مزايا تحسن تجربتك في استخدام تطبيق خرائط جوجل #جوجل"
+            android:textSize="27sp"
+            android:textAlignment="viewEnd"
+            android:layout_margin="12dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/details_date"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text=" الاجد 6 ديسمبر 2021"
+            android:textSize="15sp"
+            android:layout_margin="12dp"
+            />
+        <ImageView
+            android:id="@+id/details_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+
+            />
+        <TextView
+            android:id="@+id/details_desc"
+            android:textSize="20sp"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:text="تصاعد التوتر في القدس الشرقية وفي غزة بين الفلسطينيين والاسرائيليين على خلفية الصدامات بين محتجين فلسطينيين والشرطة الإسرائيلية في حي الشيخ جراح في القدس الشرقية كان موضع اهتمام الصحف البريطانية.تصاعد التوتر في القدس الشرقية وفي غزة بين الفلسطينيين والاسرائيليين على خلفية الصدامات بين محتجين فلسطينيين والشرطة الإسرائيلية في حي الشيخ جراح في القدس الشرقية كان موضع اهتمام الصحف البريطانية.تصاعد التوتر في القدس الشرقية وفي غزة بين الفلسطينيين والاسرائيليين على خلفية الصدامات بين محتجين فلسطينيين والشرطة الإسرائيلية في حي الشيخ جراح في القدس الشرقية كان موضع اهتمام الصحف البريطانية.تصاعد التوتر في القدس الشرقية وفي غزة بين الفلسطينيين والاسرائيليين على خلفية الصدامات بين محتجين فلسطينيين والشرطة الإسرائيلية في حي الشيخ جراح في القدس الشرقية كان موضع اهتمام الصحف البريطانية."
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</ScrollView>

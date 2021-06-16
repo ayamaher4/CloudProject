@@ -11,9 +11,6 @@
         android:theme="@style/Theme.CloudProject">
         <uses-library android:name="com.google.android.things" />
 
-        <activity android:name="Activities.Spalsh"></activity>
-        <activity android:name="Activities.SignUp" />
-        <activity android:name="Activities.SignIn" />
         <activity android:name="Activities.SettingsActivity" />
         <activity android:name="Activities.AboutActivity" />
         <activity android:name="Activities.NewsDetailsActivity" />

@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.cloudproject.OnItemClickListener;
 import com.example.cloudproject.R;
 import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
@@ -24,7 +26,10 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.newsViewHolder
     Context context;
     Call<Article> recentApiCall;
     NetworkUtils networkUtils = new NetworkUtils(context);
-    AdapterView.OnItemClickListener onItemClickListener;
+    OnItemClickListener onItemClickListener;
+
+
+
     public NewsAdapter(Context context) {
         this.mArticles = new ArrayList<>();
         this.context=context;
@@ -74,6 +79,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.newsViewHolder
             textViewAuthor = itemView.findViewById(R.id.text_author);
             textViewDate = itemView.findViewById(R.id.text_date_news);
             imageViewNews=itemView.findViewById(R.id.imageView_news);
+            imageViewShare = itemView.findViewById(R.id.share_icon);
             Log.e("size", String.valueOf(mArticles.size()));
 
             if (onItemClickListener !=null){
@@ -106,11 +112,11 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.newsViewHolder
                     .centerCrop().error(R.drawable.home)
                     .into(imageViewNews);
 
+//     Glide.with(imageViewNews).load(item.getUrlToImage()).error(R.drawable.homeicon).into(imageViewNews);
 
         }
     }
-    public void setOnItemClickListener(AdapterView.OnItemClickListener onItemClickListener){
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener){
         this.onItemClickListener=onItemClickListener;
     }
-
 }

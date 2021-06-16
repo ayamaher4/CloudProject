@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.cloudproject.R;
 
-public class PhotoActivity extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

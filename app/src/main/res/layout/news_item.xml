@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardElevation="10dp"
+    android:background="@color/w"
     android:layout_margin="12dp"
     app:cardCornerRadius="5dp">
 
@@ -20,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
-            tools:text="العربية"
+            tools:text="الجزيرة"
             android:textStyle="bold"
             android:layout_marginEnd="12dp"
             android:textColor="@color/purple_500"
@@ -43,7 +44,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_author"
-            tools:text="قائمة باهم المكتبات الرقمية التي تتضمن مواد باللغة العربية التقنية" />
+            tools:text="قائمة باهم المكتبات الرقمية التي تتضمن مواد باللغى العربية التقنية" />
 
         <ImageView
             android:id="@+id/imageView_news"
@@ -55,11 +56,23 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/share_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_tittle"
             tools:src="@drawable/ic_launcher_background" />
 
+        <ImageView
+            android:id="@+id/share_icon"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_baseline_share_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_news" />
 
         <TextView
             android:id="@+id/text_date_news"

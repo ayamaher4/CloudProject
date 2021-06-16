@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
+import com.example.cloudproject.OnItemClickListener;
 import com.example.cloudproject.R;
 import com.google.gson.Gson;
 
@@ -46,8 +47,10 @@ public class HomeFragment extends Fragment {
     private List<Article> articleList;
     private ProgressBar progressBarNews;
 
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         View root= inflater.inflate(R.layout.fragment_home, container, false);
         articleList = new ArrayList<>();
         progressBarNews = root.findViewById(R.id.progress_news);
@@ -83,7 +86,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onResponse(@NotNull Call<News> call, @NotNull Response<News> response) {
                 if (response.isSuccessful() && response.body() != null) {
-
+                    //News newsList = response.body();
                     List<Article> article = response.body().getArticles();
                     articleList.addAll(article);
 
@@ -130,6 +133,7 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
 
 
     }

@@ -10,6 +10,11 @@
         android:id="@+id/navigation_News"
         android:icon="@drawable/news"
         android:title="News" />
+
+    <item
+        android:id="@+id/navigation_About"
+        android:icon="@drawable/about"
+        android:title="News" />
     <item
         android:id="@+id/Profile"
         android:icon="@drawable/profile"

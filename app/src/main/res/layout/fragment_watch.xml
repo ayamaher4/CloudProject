@@ -25,7 +25,7 @@
 
 
         <com.google.android.exoplayer2.ui.PlayerView
-            android:id="@+id/videoview_t"
+            android:id="@+id/videoview1"
             android:layout_width="match_parent"
             android:layout_height="320dp"
             android:layout_marginStart="12dp"
@@ -38,7 +38,7 @@
             app:layout_constraintTop_toBottomOf="@+id/toolbar_watch" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView1"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_marginStart="24dp"
@@ -48,25 +48,25 @@
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/videoview_t"
-            app:layout_constraintTop_toTopOf="@+id/videoview_t" />
+            app:layout_constraintStart_toStartOf="@+id/videoview1"
+            app:layout_constraintTop_toTopOf="@+id/videoview1" />
 
 
 
         <com.google.android.exoplayer2.ui.PlayerView
-            android:id="@+id/videoview_j"
+            android:id="@+id/videoview2"
             android:layout_width="0dp"
             android:layout_height="320dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/videoview_t"
+            app:layout_constraintEnd_toEndOf="@+id/videoview1"
             android:background="@color/black"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/videoview_t"
-            app:layout_constraintTop_toBottomOf="@+id/videoview_t"/>
+            app:layout_constraintStart_toStartOf="@+id/videoview1"
+            app:layout_constraintTop_toBottomOf="@+id/videoview1"/>
 
 
         <TextView
-            android:id="@+id/textView_j"
+            android:id="@+id/textView2"
             android:layout_width="296dp"
             android:layout_height="42dp"
             android:layout_gravity="bottom"
@@ -76,14 +76,14 @@
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/videoview_j"
-            app:layout_constraintTop_toTopOf="@+id/videoview_j" />
+            app:layout_constraintStart_toStartOf="@+id/videoview2"
+            app:layout_constraintTop_toTopOf="@+id/videoview2" />
 
 
 
 
         <com.google.android.exoplayer2.ui.PlayerView
-            android:id="@+id/videoview_a"
+            android:id="@+id/videoview3"
             android:layout_width="match_parent"
             android:background="@color/black"
             android:layout_height="320dp"
@@ -92,11 +92,11 @@
             android:layout_marginEnd="12dp"
             android:layout_marginStart="12dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/videoview_j"/>
+            app:layout_constraintTop_toBottomOf="@+id/videoview2"/>
 
 
         <TextView
-            android:id="@+id/textView_a"
+            android:id="@+id/textView3"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_marginStart="24dp"
@@ -107,15 +107,15 @@
             android:textSize="22sp"
             android:layout_marginTop="24dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/videoview_a"
-            app:layout_constraintTop_toTopOf="@+id/videoview_a" />
+            app:layout_constraintStart_toStartOf="@+id/videoview3"
+            app:layout_constraintTop_toTopOf="@+id/videoview3" />
 
 
 
 
 
         <com.google.android.exoplayer2.ui.PlayerView
-            android:id="@+id/videoview_r"
+            android:id="@+id/videoview4"
             android:layout_width="match_parent"
             android:layout_height="320dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -124,11 +124,11 @@
             android:layout_marginEnd="12dp"
             android:layout_marginStart="12dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/videoview_a"/>
+            app:layout_constraintTop_toBottomOf="@+id/videoview3"/>
 
 
         <TextView
-            android:id="@+id/textView_r"
+            android:id="@+id/textView4"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_marginStart="24dp"
@@ -139,8 +139,8 @@
             android:textSize="22sp"
             android:layout_marginTop="24dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/videoview_r"
-            app:layout_constraintTop_toTopOf="@+id/videoview_r" />
+            app:layout_constraintStart_toStartOf="@+id/videoview4"
+            app:layout_constraintTop_toTopOf="@+id/videoview4" />
 
 
 

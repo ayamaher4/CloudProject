@@ -20,14 +20,29 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
-            tools:text="الجزيرة"
-            android:textStyle="bold"
             android:layout_marginEnd="12dp"
             android:textColor="@color/purple_500"
             android:textSize="30sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="دنيا الوطن" />
+
+        <ImageView
+            android:id="@+id/imageView_news"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_author"
+            tools:src="@drawable/ic_launcher_background" />
 
         <TextView
             android:id="@+id/text_tittle"
@@ -40,51 +55,37 @@
             android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_author"
-            tools:text="قائمة باهم المكتبات الرقمية التي تتضمن مواد باللغى العربية التقنية" />
-
-        <ImageView
-            android:id="@+id/imageView_news"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginStart="12dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toTopOf="@+id/share_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_news"
+            tools:text="استشهدت مواطنة فلسطينية شمال القدس، اليوم الأربعاء، بعدما أطلق عليها جيش الاحتلال الإسرائيلي النار، بدعوى محاولتها تنفيذ عملية دهس وطعن" />
+
+
+        <TextView
+            android:id="@+id/text_date_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="252dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_tittle"
-            tools:src="@drawable/ic_launcher_background" />
+            app:layout_constraintVertical_bias="0.724"
+            tools:text="16-6-2021 12:63am" />
 
         <ImageView
             android:id="@+id/share_icon"
             android:layout_width="35sp"
             android:layout_height="35sp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="320dp"
             android:layout_marginBottom="8dp"
             android:src="@drawable/ic_baseline_share_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView_news" />
-
-        <TextView
-            android:id="@+id/text_date_news"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView_news"
-            tools:text="12-5-2020 12:63am" />
+            app:layout_constraintTop_toBottomOf="@+id/text_tittle" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

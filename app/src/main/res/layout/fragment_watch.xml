@@ -10,138 +10,120 @@
         >
 
 
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_watch"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:title="Videos"
-            app:titleMarginBottom="100dp"
-            app:titleMarginStart="12dp"
-            app:titleTextColor="@color/white" />
-
-
         <com.google.android.exoplayer2.ui.PlayerView
             android:id="@+id/videoview1"
-            android:layout_width="match_parent"
-            android:layout_height="320dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="12dp"
+            android:layout_width="391dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar_watch" />
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="0dp"
             android:layout_height="35dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="29dp"
             android:layout_marginEnd="16dp"
-            android:text="تعريف عن القدس."
-            android:textColor="@color/white"
+            android:text="جولة في القدس وضواحيها."
+            android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/videoview1"
-            app:layout_constraintTop_toTopOf="@+id/videoview1" />
-
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <com.google.android.exoplayer2.ui.PlayerView
             android:id="@+id/videoview2"
-            android:layout_width="0dp"
-            android:layout_height="320dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/videoview1"
+            android:layout_width="391dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
             android:background="@color/black"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/videoview1"
-            app:layout_constraintTop_toBottomOf="@+id/videoview1"/>
-
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="296dp"
             android:layout_height="42dp"
             android:layout_gravity="bottom"
-            android:layout_marginBottom="24dp"
-            android:layout_marginTop="24dp"
-            android:text="جولة في القدس."
-            android:textColor="@color/white"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="12dp"
+            android:text="تصوير جوي لمدينة القدس."
+            android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/videoview2"
-            app:layout_constraintTop_toTopOf="@+id/videoview2" />
-
-
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoview1" />
 
 
         <com.google.android.exoplayer2.ui.PlayerView
             android:id="@+id/videoview3"
-            android:layout_width="match_parent"
+            android:layout_width="391dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
             android:background="@color/black"
-            android:layout_height="320dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/videoview2"/>
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="0dp"
             android:layout_height="35dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="24dp"
-            android:text="صوت الاذان من القدس."
-            android:textColor="@color/white"
-            android:textSize="22sp"
+            android:layout_marginStart="137dp"
             android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="أسوار القدس وأبوابها المفتوحة."
+            android:textColor="@color/black"
+            android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/videoview3"
-            app:layout_constraintTop_toTopOf="@+id/videoview3" />
-
-
-
-
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoview2" />
 
         <com.google.android.exoplayer2.ui.PlayerView
             android:id="@+id/videoview4"
-            android:layout_width="match_parent"
-            android:layout_height="320dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:background="@color/black"
-            android:layout_marginTop="24dp"
+            android:layout_width="391dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="19dp"
             android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/videoview3"/>
-
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="0dp"
             android:layout_height="35dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="24dp"
-            android:text="رمضان في القدس."
-            android:textColor="@color/white"
+            android:layout_marginStart="229dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="12dp"
+            android:text="أسواق مدينة القدس."
+            android:textColor="@color/black"
             android:textSize="22sp"
-            android:layout_marginTop="24dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/videoview4"
-            app:layout_constraintTop_toTopOf="@+id/videoview4" />
-
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoview3" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

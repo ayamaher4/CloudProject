@@ -21,10 +21,10 @@ import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 
 public class WatchFragment extends Fragment {
 
-    String uri1="https://firebasestorage.googleapis.com/v0/b/hind-dc029.appspot.com/o/%D9%85%D8%A7%20%D9%87%D9%8A%20%D8%A7%D9%84%D9%82%D8%AF%D8%B3%20_%20%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%AF%D9%82%D9%8A%D9%82%D8%A9(240P).mp4?alt=media&token=99330b1f-3b28-4a6e-af17-1ea016eeebf5";
-    String uri2 ="https://firebasestorage.googleapis.com/v0/b/hind-dc029.appspot.com/o/%D8%AC%D9%88%D9%84%D8%A9%20%D8%B1%D8%A7%D8%A6%D8%B9%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%82%D8%AF%D8%B3%20-%20like%20_%20subscribe%20_%20comment(360P).mp4?alt=media&token=31b2b7b4-bda8-4aa2-b877-85fba75d8038";
-    String uri3 ="https://firebasestorage.googleapis.com/v0/b/hind-dc029.appspot.com/o/VID-20210531-WA0000.mp4?alt=media&token=91c0d802-dd89-4d69-b6f0-9d5bcbd3b8a4";
-    String uri4 ="https://firebasestorage.googleapis.com/v0/b/hind-dc029.appspot.com/o/VID-20210530-WA0004.mp4?alt=media&token=6e8d8480-abf5-42de-83ab-682eab6ee119";
+    String uri1="https://firebasestorage.googleapiscomgs://cloudproject-3862c.appspot.com/WatchVideo/جولة رائعة في مدينة القدس - like & subscribe & comment.mp4";
+    String uri2 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/اجمل تصوير جوي القدس الشريف - HD.mp4";
+    String uri3 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/جولة على أسوار القدس وأبوابها المفتوحة.mp4";
+    String uri4 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/جولة في أسواق مدينة القدس القديمة.mp4";
 
     private boolean isPlay;
 

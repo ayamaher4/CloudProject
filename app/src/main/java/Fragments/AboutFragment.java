@@ -19,7 +19,7 @@ public class AboutFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root= inflater.inflate(R.layout.fragment_about, container, false);
-        root.findViewById(R.id.text_photo).setOnClickListener(new View.OnClickListener() {
+        root.findViewById(R.id.jerusalem).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i= new Intent(getContext(), AboutActivity.class);

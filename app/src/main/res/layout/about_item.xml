@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="12dp"
+    android:layout_height="230dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/text_t"
+        android:layout_width="153dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="باب العامود" />
+
+    <TextView
+        android:id="@+id/text_d"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:textColor="#2196F3"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:text=" باب العامود أحد أهم أبواب المسجد الأقصى" />
+
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="235dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/view" />
+
+</androidx.cardview.widget.CardView>
+
+

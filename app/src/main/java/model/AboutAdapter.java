@@ -25,7 +25,7 @@ public AboutAdapter(Context context, List<String> Strings) {
      @NonNull
 @Override
 public photoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.image_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.about_item, parent, false);
         return new photoViewHolder(view);
         }
 

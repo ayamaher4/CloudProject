@@ -2,8 +2,8 @@
     <string name="app_name">CloudProject</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="text1">Jerusalem</string>
-    <string name="text2">Al-Aqsa Mosque</string>
+    <string name="text1">القدس</string>
+    <string name="text2">المسجد الأقصى</string>
     <string name="key_font_size">key_font_size</string>
     <string name="key_night_mode">key_night_mode</string>
     <string name="confirm">Confirm</string>

@@ -5,27 +5,18 @@ import com.google.gson.annotations.SerializedName;
 
 public class About {
 
-    private String author;
+
+    private String title;
     @SerializedName("title")
     @Expose
-    private String title;
+    private String description;
     @SerializedName("description")
     @Expose
-    private String description;
-    @SerializedName("url")
-    @Expose
-    private String url;
+    private String urlToImage;
     @SerializedName("urlToImage")
     @Expose
     private String content;
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
 
     public String getTitle() {
         return title;
@@ -44,10 +35,10 @@ public class About {
     }
 
     public String getUrlImage() {
-        return url;
+        return urlToImage;
     }
 
     public void setUrl(String url) {
-        this.url = url;
+        this.urlToImage = url;
     }
 }

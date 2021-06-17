@@ -21,7 +21,7 @@ import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 
 public class VideoFragment extends Fragment {
 
-    String uri1="https://firebasestorage.googleapiscomgs://cloudproject-3862c.appspot.com/WatchVideo/جولة رائعة في مدينة القدس - like & subscribe & comment.mp4";
+    String uri1="https://firebasestorage.googleapiscomgs://cloudproject-3862c.appspot.com/WatchVideo/اجمل تصوير جوي القدس الشريف - HD.mp4";
     String uri2 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/اجمل تصوير جوي القدس الشريف - HD.mp4";
     String uri3 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/جولة على أسوار القدس وأبوابها المفتوحة.mp4";
     String uri4 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/جولة في أسواق مدينة القدس القديمة.mp4";

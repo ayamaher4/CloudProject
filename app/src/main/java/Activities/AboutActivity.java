@@ -34,6 +34,7 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+
         list=new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerView_photo);
         progressBar = findViewById(R.id.progress);
@@ -42,15 +43,16 @@ public class AboutActivity extends AppCompatActivity {
 
 
 
-        getListItems();
+        getjerusalem();
+        getAlAqsaMosque();
 
     }
 
-    private void getListItems() {
+    private void getjerusalem() {
         progressBar.setVisibility(View.VISIBLE);
-        //FirebaseFirestore db = FirebaseFirestore.getInstance();
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-      /*  db.collection("image")
+        db.collection("jerusalem")
 
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -58,35 +60,31 @@ public class AboutActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                list.add(document.getData().get("m1").toString());
-                                list.add(document.getData().get("m2").toString());
-                                list.add(document.getData().get("m3").toString());
-                                list.add(document.getData().get("m4").toString());
-                                list.add(document.getData().get("m5").toString());
-                                list.add(document.getData().get("m6").toString());
-                                list.add(document.getData().get("m7").toString());
-                                list.add(document.getData().get("m8").toString());
-                                list.add(document.getData().get("m9").toString());
-                                list.add(document.getData().get("m10").toString());
-                                list.add(document.getData().get("m11").toString());
-                                list.add(document.getData().get("m12").toString());
-                                list.add(document.getData().get("m13").toString());
-                                list.add(document.getData().get("m14").toString());
-                                list.add(document.getData().get("m15").toString());
-                                list.add(document.getData().get("m16").toString());
-                                list.add(document.getData().get("m17").toString());
-                                list.add(document.getData().get("m18").toString());
-                                list.add(document.getData().get("m19").toString());
-                                //        list.add(document.getData().get("m20").toString());
-                                Log.d("TAG", document.getId() + " => " + document.getData());
-                                Log.d("TAG", document.getId() + " =>sssss " + list.size());
-                                Log.d("TAG", document.getId() + " =>gggggggg " + document.getData().get("m2"));
-                          //  }
-                           adapter = new ِAboutAdapter(getApplicationContext(), list);
+                                list.add(document.getData().get("title1").toString());
+                                list.add(document.getData().get("title2").toString());
+                                list.add(document.getData().get("title3").toString());
+                                list.add(document.getData().get("title4").toString());
+                                list.add(document.getData().get("title5").toString());
+                                list.add(document.getData().get("title6").toString());
+                                list.add(document.getData().get("description1").toString());
+                                list.add(document.getData().get("description2").toString());
+                                list.add(document.getData().get("description3").toString());
+                                list.add(document.getData().get("description4").toString());
+                                list.add(document.getData().get("description5").toString());
+                                list.add(document.getData().get("description6").toString());
+                                list.add(document.getData().get("photo1").toString());
+                                list.add(document.getData().get("photo2").toString());
+                                list.add(document.getData().get("photo3").toString());
+                                list.add(document.getData().get("photo4").toString());
+                                list.add(document.getData().get("photo5").toString());
+                                list.add(document.getData().get("photo6").toString());
+
+                                Log.d("TAG", document.getId() + " Id " + document.getData());
+                                Log.d("TAG", document.getId() + " Size " + list.size());
+                            }
+                            adapter = new AboutAdapter(getApplicationContext(), list);
                             recyclerView.setHasFixedSize(true);
-                            StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
-                            recyclerView.setLayoutManager(staggeredGridLayoutManager);
-                            // recyclerView.setLayoutManager(new LinearLayoutManager(PhotoActivity.this));
+                            recyclerView.setLayoutManager(new LinearLayoutManager(AboutActivity.this));
                             recyclerView.setAdapter(adapter);
                             adapter.notifyDataSetChanged();
                             progressBar.setVisibility(View.INVISIBLE);
@@ -96,12 +94,56 @@ public class AboutActivity extends AppCompatActivity {
                             progressBar.setVisibility(View.VISIBLE);
 
                         }
-
-
                     }
                 });
+    }
 
-  }}}
+
+
+        private void getAlAqsaMosque() {
+            progressBar.setVisibility(View.VISIBLE);
+            FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+            db.collection("AlAqsaMosque")
+
+                    .get()
+                    .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                            if (task.isSuccessful()) {
+                                for (QueryDocumentSnapshot document : task.getResult()) {
+                                    list.add(document.getData().get("titlea1").toString());
+                                    list.add(document.getData().get("title2a").toString());
+                                    list.add(document.getData().get("titlea3").toString());
+                                    list.add(document.getData().get("titlea4").toString());
+                                    list.add(document.getData().get("descriptiona1").toString());
+                                    list.add(document.getData().get("descriptiona2").toString());
+                                    list.add(document.getData().get("descriptiona3").toString());
+                                    list.add(document.getData().get("descriptiona4").toString());
+                                    list.add(document.getData().get("photoa1").toString());
+                                    list.add(document.getData().get("photoa2").toString());
+                                    list.add(document.getData().get("photoa3").toString());
+                                    list.add(document.getData().get("photoa4").toString());
+
+
+                                    Log.d("TAG", document.getId() + " Id " + document.getData());
+                                    Log.d("TAG", document.getId() + " Size " + list.size());
+                                }
+                                adapter = new AboutAdapter(getApplicationContext(), list);
+                                recyclerView.setHasFixedSize(true);
+                                recyclerView.setLayoutManager(new LinearLayoutManager(AboutActivity.this));
+                                recyclerView.setAdapter(adapter);
+                                adapter.notifyDataSetChanged();
+                                progressBar.setVisibility(View.INVISIBLE);
+
+                            } else {
+                                Log.d("TAG", "Error getting documents: ", task.getException());
+                                progressBar.setVisibility(View.VISIBLE);
+
+                            }
+                        }
+                    });
+
+
+        }
   }
-       */
-    }}

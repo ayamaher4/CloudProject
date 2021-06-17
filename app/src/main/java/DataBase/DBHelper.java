@@ -34,7 +34,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public boolean DataInsert(String Name , String Password , String Email , String Phone){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues CV = new ContentValues();
-        CV.put( "userName" , Name);
+        CV.put( "Name" , Name);
         CV.put( "password" , Password);
         CV.put( "Email" , Email);
         CV.put( "Phone" , Phone);
@@ -45,6 +45,7 @@ public class DBHelper extends SQLiteOpenHelper {
             return true;
         }
     }
+
 
 
     public Cursor ReadAllData(){

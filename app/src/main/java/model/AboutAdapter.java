@@ -20,7 +20,7 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHol
     private List<About> mAbout;
     Context context;
 
-      public AboutAdapter(Context context) {
+      public AboutAdapter(Context context, ArrayList<String> list) {
           this.mAbout = new ArrayList<>();
           this.context=context;
 

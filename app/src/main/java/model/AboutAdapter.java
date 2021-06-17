@@ -17,61 +17,52 @@ import java.util.List;
 
 
 public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHolder> {
-    private List<Article> mArticles;
-   // private List<String> mStrings;
+    private List<About> mAbout;
     Context context;
 
-public AboutAdapter(Context mArticles, ArrayList<String> context) {
-         // this.mStrings = Strings;
-        this.context = context;
-
-         this.mArticles = new ArrayList<>();
-        this.mArticles =mArticles;
+      public AboutAdapter(Context context) {
+          this.mAbout = new ArrayList<>();
           this.context=context;
 
-        }
+}
 
-     @NonNull
-@Override
-public AboutViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        @NonNull
+       @Override
+     public AboutViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.about_item, parent, false);
         return new AboutViewHolder(view);
         }
 
-@Override
-public void onBindViewHolder(@NonNull AboutViewHolder holder, int position) {
-       // holder.onBind(mStrings.get(position));
-          holder.onBind(mArticles.get(position));
+         @Override
+        public void onBindViewHolder(@NonNull AboutViewHolder holder, int position) {
+          holder.onBind(mAbout.get(position));
         }
 
-@Override
-public int getItemCount() {
-        return mArticles.size();
+     @Override
+       public int getItemCount() {
+        return mAbout.size();
         }
 
 
-public class AboutViewHolder extends RecyclerView.ViewHolder {
-    TextView textViewtitle;
-    TextView textViewDescription;
-    ImageView imageView;
+       public class AboutViewHolder extends RecyclerView.ViewHolder {
+       TextView textTitle;
+       TextView textDescription;
+        ImageView imageView;
 
     public AboutViewHolder(@NonNull View itemView) {
         super(itemView);
         imageView = itemView.findViewById(R.id.photo);
-        textViewtitle = itemView.findViewById(R.id.text_title1);
-        textViewDescription = itemView.findViewById(R.id.text_desc);
+        textTitle = itemView.findViewById(R.id.text_title1);
+        textDescription = itemView.findViewById(R.id.text_desc);
 
 
     }
 
-    public void onBind(Article item) {
-        textViewtitle.setText(item.getTitle());
-        textViewDescription.setText(item.getDescription());
-         // public void onBind(String item) {
-       // textViewtitle.setText(item.getTitle());
+    public void onBind(About item) {
+        textTitle.setText(item.getTitle());
+        textDescription.setText(item.getDescription());
         Picasso.get()
-                .load(item.getUrlToImage())
-              //  .load(item)
+                .load(item.getUrlImage())
                 .resize(50, 50)
                 .centerCrop().error(R.drawable.home)
                 .into(imageView);

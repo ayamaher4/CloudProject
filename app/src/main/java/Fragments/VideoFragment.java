@@ -19,7 +19,7 @@ import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 
-public class WatchFragment extends Fragment {
+public class VideoFragment extends Fragment {
 
     String uri1="https://firebasestorage.googleapiscomgs://cloudproject-3862c.appspot.com/WatchVideo/جولة رائعة في مدينة القدس - like & subscribe & comment.mp4";
     String uri2 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/اجمل تصوير جوي القدس الشريف - HD.mp4";
@@ -49,7 +49,7 @@ public class WatchFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_watch, container, false);
+        View root = inflater.inflate(R.layout.fragment_vedio, container, false);
 
         playerView1 = root.findViewById(R.id.videoview1);
         playerView2 = root.findViewById(R.id.videoview2);

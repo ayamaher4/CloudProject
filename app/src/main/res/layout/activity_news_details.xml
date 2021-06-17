@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,50 +14,56 @@
             android:id="@+id/details_author"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="وكالة نيوز الاخبارية"
+            tools:text="وكالة شهاب"
             android:textAlignment="viewEnd"
             android:textColor="@color/purple_500"
             android:textSize="25sp"
-            android:layout_margin="12dp"
-            />
+            android:layout_margin="12dp" />
+
+        <ImageView
+            android:id="@+id/details_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+
         <TextView
             android:id="@+id/details_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text=" 7 مزايا تحسن تجربتك في استخدام تطبيق خرائط جوجل #جوجل"
-            android:textSize="27sp"
-            android:textAlignment="viewEnd"
             android:layout_margin="12dp"
+            android:textAlignment="viewEnd"
+            android:textSize="27sp"
             android:textStyle="bold"
-            />
+            tools:text=" 7 مزايا تحسن تجربتك في استخدام تطبيق خرائط جوجل #جوجل" />
+
         <TextView
             android:id="@+id/details_date"
             android:textAlignment="viewEnd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text=" الاجد 6 ديسمبر 2021"
+            tools:text=" الاحد 6 ديسمبر 2021"
             android:textSize="15sp"
-            android:layout_margin="12dp"
-            />
-        <ImageView
-            android:id="@+id/details_image"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:src="@drawable/ic_launcher_background"
-            android:layout_marginTop="16dp"
-            android:adjustViewBounds="true"
+            android:layout_margin="12dp" />
 
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
 
-            />
+
+
+
         <TextView
             android:id="@+id/details_desc"
             android:textSize="20sp"
             android:layout_margin="12dp"
             android:layout_width="match_parent"
-            android:text="تصاعد التوتر في القدس الشرقية وفي غزة بين الفلسطينيين والاسرائيليين على خلفية الصدامات بين محتجين فلسطينيين والشرطة الإسرائيلية في حي الشيخ جراح في القدس الشرقية كان موضع اهتمام الصحف البريطانية.تصاعد التوتر في القدس الشرقية وفي غزة بين الفلسطينيين والاسرائيليين على خلفية الصدامات بين محتجين فلسطينيين والشرطة الإسرائيلية في حي الشيخ جراح في القدس الشرقية كان موضع اهتمام الصحف البريطانية.تصاعد التوتر في القدس الشرقية وفي غزة بين الفلسطينيين والاسرائيليين على خلفية الصدامات بين محتجين فلسطينيين والشرطة الإسرائيلية في حي الشيخ جراح في القدس الشرقية كان موضع اهتمام الصحف البريطانية.تصاعد التوتر في القدس الشرقية وفي غزة بين الفلسطينيين والاسرائيليين على خلفية الصدامات بين محتجين فلسطينيين والشرطة الإسرائيلية في حي الشيخ جراح في القدس الشرقية كان موضع اهتمام الصحف البريطانية."
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:text="مسيرة الأعلام بالقدس.. تأهب أمني إسرائيلي لحماية المتظاهرين ودعوات فلسطينية لـ(يوم غضب)
+بدأت الشرطة الإسرائيلية اليوم الثلاثاء الاستعدادات لتوفير الحماية ليمينيين إسرائيليين من المتوقع أن يشاركوا مساء اليوم في مسيرة الأعلام الاستفزازية بالقدس الشرقية، في حين دعا فلسطينيون إلى (يوم غضب)."
+            />
+
     </LinearLayout>
 
 

@@ -15,11 +15,19 @@ import Activities.AboutActivity;
 
 public class AboutFragment extends Fragment {
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root= inflater.inflate(R.layout.fragment_about, container, false);
         root.findViewById(R.id.jerusalem).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i= new Intent(getContext(), AboutActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+        root.findViewById(R.id.AlAqsaMosque).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i= new Intent(getContext(), AboutActivity.class);

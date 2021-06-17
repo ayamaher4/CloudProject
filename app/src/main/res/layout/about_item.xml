@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/text_t"
+        android:id="@+id/text_title1"
         android:layout_width="153dp"
         android:layout_height="50dp"
         android:layout_marginStart="230dp"
@@ -19,7 +19,7 @@
         tools:text="باب العامود" />
 
     <TextView
-        android:id="@+id/text_d"
+        android:id="@+id/text_desc"
         android:layout_width="376dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"

@@ -21,10 +21,10 @@ import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 
 public class VideoFragment extends Fragment {
 
-    String uri1="https://firebasestorage.googleapiscomgs://cloudproject-3862c.appspot.com/WatchVideo/اجمل تصوير جوي القدس الشريف - HD.mp4";
-    String uri2 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/اجمل تصوير جوي القدس الشريف - HD.mp4";
-    String uri3 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/جولة على أسوار القدس وأبوابها المفتوحة.mp4";
-    String uri4 ="https://firebasestorage.googleapis.comgs://cloudproject-3862c.appspot.com/WatchVideo/جولة في أسواق مدينة القدس القديمة.mp4";
+    String uri1="https://firebasestorage.googleapis.com/v0/b/cloudproject-3862c.appspot.com/o/WatchVideo%2Fاجمل%20تصوير%20جوي%20القدس%20الشريف%20-%20HD.mp4?alt=media&token=10b8490a-a879-4b59-a289-32a9e16e0a4b";
+    String uri2 ="https://firebasestorage.googleapis.com/v0/b/cloudproject-3862c.appspot.com/o/WatchVideo%2Fجولة%20رائعة%20في%20مدينة%20القدس%20-%20like%20%26%20subscribe%20%26%20comment.mp4?alt=media&token=7a1af7f6-487a-4a20-985e-32973cd1ec22";
+    String uri3 ="https://firebasestorage.googleapis.com/v0/b/cloudproject-3862c.appspot.com/o/WatchVideo%2Fجولة%20على%20أسوار%20القدس%20وأبوابها%20المفتوحة.mp4?alt=media&token=ee1287ff-99ba-4364-aa88-45da720cab18";
+    String uri4 ="https://firebasestorage.googleapis.com/v0/b/cloudproject-3862c.appspot.com/o/WatchVideo%2Fجولة%20في%20أسواق%20مدينة%20القدس%20القديمة.mp4?alt=media&token=6948a872-dc6d-4792-a8a5-b34dd2a66e61";
 
     private boolean isPlay;
 
@@ -80,8 +80,7 @@ public class VideoFragment extends Fragment {
         player.setPlayWhenReady(playWhenReady);
         player.seekTo(currentWindow, playPackPosition);
         player.prepare(mediaSource, false, false);
-        playerView1.onPause();
-
+        playerView.onPause();
     }
     @Override
     public void onStart() {

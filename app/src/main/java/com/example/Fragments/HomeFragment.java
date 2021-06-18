@@ -27,7 +27,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import Activities.NewsDetailsActivity;
+import com.example.Activities.NewsDetailsActivity;
 import com.example.Network.NetworkUtils;
 import com.example.model.Article;
 import com.example.model.News;

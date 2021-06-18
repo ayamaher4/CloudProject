@@ -16,7 +16,7 @@
         android:icon="@drawable/about"
         android:title="Information" />
     <item
-        android:id="@+id/Profile"
+        android:id="@+id/navigation_Profile"
         android:icon="@drawable/profile"
         android:title="Profile" />
 </menu>

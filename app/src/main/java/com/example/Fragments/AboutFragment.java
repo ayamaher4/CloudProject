@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.example.cloudproject.R;
 
-import Activities.AboutActivity;
+import com.example.Activities.AboutActivity;
 
 public class AboutFragment extends Fragment {
     @Override

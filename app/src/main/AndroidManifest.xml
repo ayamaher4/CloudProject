@@ -11,11 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CloudProject">
-        <uses-library android:name="com.google.android.things" />
+<!--        <uses-library android:name="com.google.android.things" />-->
 
-        <activity android:name="Activities.SettingsActivity" />
-        <activity android:name="Activities.AboutActivity" />
-        <activity android:name="Activities.NewsDetailsActivity" />
+        <activity android:name="com.example.Activities.SettingsActivity" />
+        <activity android:name="com.example.Activities.AboutActivity" />
+        <activity android:name="com.example.Activities.NewsDetailsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

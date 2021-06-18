@@ -38,7 +38,7 @@ public class SignUpFragment extends Fragment {
         Phone = root.findViewById(R.id.phoneInput);
         SignUp = root.findViewById(R.id.btnSignUp);
 
-        SharedPreferences SP = getActivity().getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        SharedPreferences SP = getActivity().getSharedPreferences("MyPref", Context.MODE_PRIVATE);
 
         Name.setText("User Name: " + SP.getString(KEY_NAME, ""));
         Email.setText("User Name: " + SP.getString(KEY_EMAIL, ""));

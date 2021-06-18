@@ -42,13 +42,20 @@ public class DBHelper extends SQLiteOpenHelper {
     };
 
 
-    private void addQuestions(ProfileInformation profileinformation) {
+    private void addinfo(ProfileInformation profileinformation) {
         ContentValues cv = new ContentValues();
-        cv.put(Profile.ProfileTable.COL_ID, id.getQusetion());
-        cv.put(Profile.ProfileTable.COL_NAME, name.getChoice1());
-        cv.put(Profile.ProfileTable.COL_EMAIL, email.getChoice2());
-        cv.put(Profile.ProfileTable.COL_PASSWORD, password.getChoice3());
-        cv.put(Profile.ProfileTable.COL_PHONE, phone.getAnswer());
+        int id=0;
+        String name ="";
+        String email ="";
+        String password ="";
+        String phone ="";
+
+        cv.put(Profile.ProfileTable.COL_ID,  id );
+        cv.put(Profile.ProfileTable.COL_NAME, name);
+        cv.put(Profile.ProfileTable.COL_EMAIL, email);
+        cv.put(Profile.ProfileTable.COL_PASSWORD, password);
+        cv.put(Profile.ProfileTable.COL_PHONE, phone);
+
 
         DB.insert(Profile.ProfileTable.TABLE_NAME, null, cv);
     }

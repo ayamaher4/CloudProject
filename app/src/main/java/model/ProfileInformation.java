@@ -17,15 +17,6 @@ public class ProfileInformation {
 
     }
 
-    public String ProfileInformation() {
-        return name;
-        return email;
-        return password;
-        return phone;
-
-    }
-
-
 
     public int getId() {
         return id;
@@ -71,4 +62,4 @@ public class ProfileInformation {
     }
 
 }
-}
+

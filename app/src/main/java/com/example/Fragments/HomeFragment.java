@@ -1,4 +1,4 @@
-package Fragments;
+package com.example.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,10 +28,10 @@ import java.util.List;
 import java.util.Locale;
 
 import Activities.NewsDetailsActivity;
-import Network.NetworkUtils;
-import model.Article;
-import model.News;
-import model.NewsAdapter;
+import com.example.Network.NetworkUtils;
+import com.example.model.Article;
+import com.example.model.News;
+import com.example.model.NewsAdapter;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

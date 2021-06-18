@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-import Fragments.SignInFragment;
+import com.example.Fragments.SignInFragment;
 
 public class MainActivity extends AppCompatActivity {
 

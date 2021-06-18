@@ -1,4 +1,4 @@
-package model;
+package com.example.model;
 
 import android.provider.BaseColumns;
 public final  class Profile {

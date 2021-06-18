@@ -1,4 +1,4 @@
-package Fragments;
+package com.example.Fragments;
 
 import android.app.Activity;
 import android.content.SharedPreferences;

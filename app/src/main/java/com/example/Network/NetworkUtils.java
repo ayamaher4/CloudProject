@@ -1,4 +1,4 @@
-package Network;
+package com.example.Network;
 import android.content.Context;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -10,7 +10,7 @@ public class NetworkUtils {
 
     String BASE_URL="https://newsapi.org/v2/";
     private Context context;
-    private  Network.ApiInterface apiInterface;
+    private  com.example.Network.ApiInterface apiInterface;
     public NetworkUtils(Context context){
         this.context=context;
         HttpLoggingInterceptor httpLoggingInterceptor=new HttpLoggingInterceptor();

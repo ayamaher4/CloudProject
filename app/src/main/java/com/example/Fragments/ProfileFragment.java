@@ -1,19 +1,6 @@
-package Fragments;
-
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.os.Bundle;
+package com.example.Fragments;
 
 import androidx.fragment.app.Fragment;
-
-import android.provider.ContactsContract;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.example.cloudproject.R;
-
-import java.util.jar.Attributes;
 
 public class ProfileFragment extends Fragment {
 

@@ -1,6 +1,6 @@
-package Network;
+package com.example.Network;
 
-import model.News;
+import com.example.model.News;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

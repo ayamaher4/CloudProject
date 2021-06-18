@@ -1,4 +1,4 @@
-package model;
+package com.example.model;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -17,7 +16,7 @@ import com.example.cloudproject.R;
 import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
-import Network.NetworkUtils;
+import com.example.Network.NetworkUtils;
 import retrofit2.Call;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.newsViewHolder> {

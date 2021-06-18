@@ -1,4 +1,4 @@
-package Fragments;
+package com.example.Fragments;
 
 import android.net.Uri;
 import android.os.Bundle;

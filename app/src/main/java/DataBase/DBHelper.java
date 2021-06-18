@@ -5,45 +5,52 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import model.Profile;
+import model.ProfileInformation;
+
 import androidx.annotation.Nullable;
 
-public class DBHelper extends SQLiteOpenHelper {
 
-    SQLiteDatabase DB;
+public class DBHelper extends SQLiteOpenHelper {
+    private static final String DATABASE_NAME = "Profile";
+    private static final int DATABASE_VERSION = 3;
+    private SQLiteDatabase DB;
+
 
     public DBHelper (@Nullable Context context) {
-        super(context, "UniversityDB", null, 1);
-        DB = getWritableDatabase();
-    }
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);    }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL(Profile.CREATE_TABLE);
+        this.DB = sqLiteDatabase;
 
+
+        final String PROFILE= " CREATE TABLE " + Profile.ProfileTable.TABLE_NAME
+                + "(" +
+                Profile.ProfileTable.COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                Profile.ProfileTable.COL_NAME + " TEXT," +
+                Profile.ProfileTable.COL_EMAIL + " TEXT," +
+                Profile.ProfileTable.COL_PASSWORD + " TEXT," +
+                Profile.ProfileTable.COL_PHONE + " TEXT)";
+        DB.execSQL(PROFILE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL(Profile.DROP_TABLE);
-        onCreate(sqLiteDatabase);
+        DB.execSQL("DROP TABLE IF EXISTS " + Profile.ProfileTable.TABLE_NAME);
+        onCreate(DB);
 
-    }
+    };
 
 
+    private void addQuestions(ProfileInformation profileinformation) {
+        ContentValues cv = new ContentValues();
+        cv.put(Profile.ProfileTable.COL_ID, id.getQusetion());
+        cv.put(Profile.ProfileTable.COL_NAME, name.getChoice1());
+        cv.put(Profile.ProfileTable.COL_EMAIL, email.getChoice2());
+        cv.put(Profile.ProfileTable.COL_PASSWORD, password.getChoice3());
+        cv.put(Profile.ProfileTable.COL_PHONE, phone.getAnswer());
 
-    public boolean DataInsert(String Name , String Password , String Email , String Phone){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues CV = new ContentValues();
-        CV.put( "Name" , Name);
-        CV.put( "password" , Password);
-        CV.put( "Email" , Email);
-        CV.put( "Phone" , Phone);
-        Long result = db.insert("Profile" , null , CV);
-        if (result == -1){
-            return false;
-        }else{
-            return true;
-        }
+        DB.insert(Profile.ProfileTable.TABLE_NAME, null, cv);
     }
 
 

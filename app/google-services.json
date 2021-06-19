@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "618608989703",
+    "firebase_url": "https://cloudproject-3862c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cloudproject-3862c",
+    "storage_bucket": "cloudproject-3862c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618608989703:android:7c430d8bcfbb665d303ca2",
+        "android_client_info": {
+          "package_name": "com.example.cloudproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618608989703-7867ilp4jvrvni9070ivp9i8b0neme6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ3tInAqUyJqH8R7_QRopXM-rikMyxG1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618608989703-7867ilp4jvrvni9070ivp9i8b0neme6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,7 +15,7 @@
             android:layout_height="104dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="70dp"
-            android:src="@drawable/Mousqe" />
+            android:src="@drawable/mousqe" />
 
         <EditText
             android:id="@+id/usernameInput"

@@ -7,6 +7,7 @@ public class ProfileInformation {
     private String password;
     private String phone;
 
+
     public ProfileInformation(int id, String name, String email , String password , String phone) {
         this.id = id;
         this.name = name;
@@ -17,13 +18,6 @@ public class ProfileInformation {
 
     }
 
-    public String ProfileInformation() {
-        return name;
-        return email;
-        return password;
-        return phone;
-
-    }
 
 
 
@@ -71,4 +65,4 @@ public class ProfileInformation {
     }
 
 }
-}
+

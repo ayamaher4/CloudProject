@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 
 public class DBHelper extends SQLiteOpenHelper {
+
     private static final String DATABASE_NAME = "Profile";
     private static final int DATABASE_VERSION = 3;
     private SQLiteDatabase DB;
@@ -42,16 +43,7 @@ public class DBHelper extends SQLiteOpenHelper {
     };
 
 
-    private void addQuestions(ProfileInformation profileinformation) {
-        ContentValues cv = new ContentValues();
-        cv.put(Profile.ProfileTable.COL_ID, id.getQusetion());
-        cv.put(Profile.ProfileTable.COL_NAME, name.getChoice1());
-        cv.put(Profile.ProfileTable.COL_EMAIL, email.getChoice2());
-        cv.put(Profile.ProfileTable.COL_PASSWORD, password.getChoice3());
-        cv.put(Profile.ProfileTable.COL_PHONE, phone.getAnswer());
 
-        DB.insert(Profile.ProfileTable.TABLE_NAME, null, cv);
-    }
 
 
 

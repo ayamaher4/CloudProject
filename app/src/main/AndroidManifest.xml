@@ -4,6 +4,7 @@
     package="com.example.cloudproject">
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,12 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CloudProject">
-        <uses-library android:name="com.google.android.things" />
+<!--        <uses-library android:name="com.google.android.things" />-->
 
-        <activity android:name="Activities.SettingsActivity" />
-        <activity android:name="Activities.AboutActivity" />
-        <activity android:name="Activities.NewsDetailsActivity" />
-        <activity android:name=".MainActivity">
+<!--        <uses-library-->
+<!--            android:name="com.google.android.maps"-->
+<!--            android:required="false" />-->
+
+
+        <activity android:name="com.example.Activities.SettingsActivity" />
+        <activity android:name="com.example.Activities.AboutActivity" />
+        <activity android:name="com.example.Activities.NewsDetailsActivity" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name="com.example.Activities.SignInActivity"/>
+        <activity android:name="com.example.Activities.SignUpActivity"/>
+        <activity android:name="com.example.Activities.SplashActivity"
+            android:theme="@style/Theme.CloudProject.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navigation_Videos:
                         openFragment(new VideoFragment());
                         return true;
-                    case R.id.navigation_About:
+                  /*  case R.id.navigation_About:
                         openFragment(new AboutFragment());
-                        return true;
+                        return true;*/
                     case R.id.navigation_Profile:
                         openFragment(new ProfileFragment());
                         return true;

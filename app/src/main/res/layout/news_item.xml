@@ -11,20 +11,22 @@
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="478dp">
 
 
         <TextView
             android:id="@+id/text_author"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="161dp"
+            android:layout_height="35dp"
             android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="12dp"
             android:textColor="@color/purple_500"
             android:textSize="30sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView_news"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="دنيا الوطن" />
@@ -33,13 +35,13 @@
             android:id="@+id/imageView_news"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="-10dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/text_tittle"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_author"
             tools:src="@drawable/ic_launcher_background" />
@@ -50,41 +52,48 @@
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="12dp"
+            android:layout_marginBottom="40dp"
             android:fontFamily="sans-serif-condensed"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/share_icon"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView_news"
             tools:text="استشهدت مواطنة فلسطينية شمال القدس، اليوم الأربعاء، بعدما أطلق عليها جيش الاحتلال الإسرائيلي النار، بدعوى محاولتها تنفيذ عملية دهس وطعن" />
-
 
         <TextView
             android:id="@+id/text_date_news"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="252dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="50dp"
+            android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_tittle"
-            app:layout_constraintVertical_bias="0.724"
             tools:text="16-6-2021 12:63am" />
 
         <ImageView
             android:id="@+id/share_icon"
             android:layout_width="35sp"
             android:layout_height="35sp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="320dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="25dp"
             android:src="@drawable/ic_baseline_share_24"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_date_news"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_tittle" />
 
 

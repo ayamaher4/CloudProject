@@ -1,7 +1,6 @@
 
 package com.example.cloudproject;
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatDelegate;

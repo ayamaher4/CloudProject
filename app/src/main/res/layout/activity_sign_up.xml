@@ -30,7 +30,7 @@
             android:nextFocusForward="@id/emailInput"
             android:imeOptions="actionNext"
             android:inputType="text"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textColorHint="#2196F3"
             android:textSize="20sp"
             />
@@ -48,7 +48,7 @@
             android:layout_marginRight="15dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textColorHint="#2196F3"
             android:textSize="20sp"
             android:layout_marginTop="10dp"
@@ -69,7 +69,7 @@
             android:layout_marginTop="10dp"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textColorHint="#2196F3"
             android:textSize="20sp"
             />
@@ -87,7 +87,7 @@
             android:layout_marginTop="10dp"
             android:hint="Phone"
             android:inputType="phone"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textColorHint="#2196F3"
             android:textSize="20sp"
             />
@@ -113,21 +113,23 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btnSignUp"
             android:layout_marginTop="25dp">
+
             <TextView
                 android:id="@+id/btnHaveAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already have account? "
-                android:textColor="@color/black"
-                android:textSize="20sp"
                 android:layout_marginStart="120dp"
-                android:layout_marginLeft="50dp" />
+                android:layout_marginLeft="50dp"
+                android:text="Already have account? "
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/signIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SIGN IN"
-                android:textSize="19sp"
+                android:textSize="15sp"
                 android:textColor="#2196F3"
 
                 />

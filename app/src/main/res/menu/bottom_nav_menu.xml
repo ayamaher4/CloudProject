@@ -11,10 +11,7 @@
         android:icon="@drawable/news"
         android:title="Videos" />
 
-    <item
-        android:id="@+id/navigation_About"
-        android:icon="@drawable/about"
-        android:title="Information" />
+
     <item
         android:id="@+id/navigation_Profile"
         android:icon="@drawable/profile"

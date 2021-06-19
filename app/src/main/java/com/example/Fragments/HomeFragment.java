@@ -81,7 +81,7 @@ public class HomeFragment extends Fragment {
         String formattedDate = df.format(c);
         System.out.println("Current time => " + formattedDate);
 
-        recentApiCall = networkUtils.getApiInterface().getRecent(q, "2021-05-20", formattedDate,"popularity", api_key,"ar");
+        recentApiCall = networkUtils.getApiInterface().getRecent(q, "2021-05-30", formattedDate,"popularity", api_key,"ar");
         recentApiCall.enqueue(new Callback<News>() {
             @Override
             public void onResponse(@NotNull Call<News> call, @NotNull Response<News> response) {

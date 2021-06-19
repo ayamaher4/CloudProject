@@ -7,7 +7,6 @@ import android.os.SystemClock;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cloudproject.MainActivity;
 import com.example.cloudproject.R;
 
 public class SplashActivity extends AppCompatActivity {

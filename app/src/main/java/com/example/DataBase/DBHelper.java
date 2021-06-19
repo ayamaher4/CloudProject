@@ -43,9 +43,8 @@ public class DBHelper extends SQLiteOpenHelper {
     };
 
 
-<<<<<<< HEAD:app/src/main/java/DataBase/DBHelper.java
-=======
-    private void addinfo(ProfileInformation profileinformation) {
+
+  /*  private void addinfo(ProfileInformation profileinformation) {
         ContentValues cv = new ContentValues();
         int id=0;
         String name ="";
@@ -59,7 +58,6 @@ public class DBHelper extends SQLiteOpenHelper {
         cv.put(Profile.ProfileTable.COL_PASSWORD, password);
         cv.put(Profile.ProfileTable.COL_PHONE, phone);
 
->>>>>>> 03d48e7a95b86a1bd9fac90a751436c0b32eb3a5:app/src/main/java/com/example/DataBase/DBHelper.java
 
 
 
@@ -73,5 +71,5 @@ public class DBHelper extends SQLiteOpenHelper {
 
         }
         return cursor;
-    }
+    }*/
 }

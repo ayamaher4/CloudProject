@@ -18,11 +18,6 @@ public class ProfileInformation {
 
     }
 
-<<<<<<< HEAD:app/src/main/java/model/ProfileInformation.java
-
-
-=======
->>>>>>> 03d48e7a95b86a1bd9fac90a751436c0b32eb3a5:app/src/main/java/com/example/model/ProfileInformation.java
 
     public int getId() {
         return id;

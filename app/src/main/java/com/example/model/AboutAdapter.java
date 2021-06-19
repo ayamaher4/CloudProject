@@ -20,7 +20,7 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHol
     private List<About> mAbout;
     Context context;
 
-      public AboutAdapter(Context context, ArrayList<String> list) {
+      public AboutAdapter(Context context, ArrayList<About> list) {
           this.mAbout = new ArrayList<>();
           this.context=context;
 
@@ -59,6 +59,7 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHol
     }
 
     public void onBind(About item) {
+
         textTitle.setText(item.getTitle());
         textDescription.setText(item.getDescription());
         Picasso.get()

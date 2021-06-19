@@ -30,7 +30,7 @@
             android:nextFocusForward="@id/emailInput"
             android:imeOptions="actionNext"
             android:inputType="text"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textColorHint="#2196F3"
             android:textSize="20sp"
             />
@@ -48,7 +48,7 @@
             android:layout_marginRight="15dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textColorHint="#2196F3"
             android:textSize="20sp"
             android:layout_marginTop="10dp"
@@ -69,7 +69,7 @@
             android:layout_marginTop="10dp"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textColorHint="#2196F3"
             android:textSize="20sp"
             />
@@ -87,7 +87,7 @@
             android:layout_marginTop="10dp"
             android:hint="Phone"
             android:inputType="phone"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textColorHint="#2196F3"
             android:textSize="20sp"
             />
@@ -106,7 +106,7 @@
             android:textAllCaps="false"
             android:textSize="18sp"
             android:text="Sign Up"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             />
         <LinearLayout
             android:layout_width="match_parent"

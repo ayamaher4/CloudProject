@@ -75,7 +75,7 @@
                     android:hint="Enter your name"
                     android:imeOptions="actionNext"
                     android:nextFocusForward="@id/emailET"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
 
@@ -103,7 +103,7 @@
                     android:hint="Enter your Email"
                     android:imeOptions="actionNext"
                     android:nextFocusForward="@id/passwordET"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -130,7 +130,7 @@
                     android:hint="Enter your Password"
                     android:imeOptions="actionNext"
                     android:nextFocusForward="@id/phoneET"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -156,7 +156,7 @@
                     android:fontFamily="sans-serif-light"
                     android:hint="Enter your Phone"
                     android:imeOptions="actionDone"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
             </LinearLayout>

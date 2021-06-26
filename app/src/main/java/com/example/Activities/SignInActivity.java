@@ -30,12 +30,9 @@ public class SignInActivity extends AppCompatActivity {
     EditText UserNameEmail, Password;
     Button SignIn;
     TextView signup;
-    DBHelper DB;
-    //DB = new DBHelper(getContext());
 
-    public SignInActivity() {
-        // Required empty public constructor
-    }
+
+
 
     @Override
     protected void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {

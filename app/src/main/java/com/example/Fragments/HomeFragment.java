@@ -39,13 +39,12 @@ import retrofit2.Response;
 public class HomeFragment extends Fragment {
     private NetworkUtils networkUtils;
     private RecyclerView recyclerView;
-    private Gson gson;
     private Call<News> recentApiCall;
     private String api_key = "a8f62f7bc7f84af7b64af921614be2ae";
-    private String q = "%D8%A7%D9%84%D9%82%D8%AF%D8%B3";
+    private String q = "القدس";
     private NewsAdapter newsAdapter;
     private List<Article> articleList;
-    private ProgressBar progressBarNews;
+
 
 
     @Override
@@ -53,16 +52,14 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root= inflater.inflate(R.layout.fragment_home, container, false);
         articleList = new ArrayList<>();
-        progressBarNews = root.findViewById(R.id.progress_news);
 
-        recyclerView=(RecyclerView)root.findViewById(R.id.recyclerView_home);
+
+        recyclerView=root.findViewById(R.id.recyclerView_home);
         newsAdapter = new NewsAdapter(getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(newsAdapter);
         networkUtils = new NetworkUtils(getContext());
 
-
-        gson = new Gson();
         return root;
     }
     @Override
@@ -74,7 +71,7 @@ public class HomeFragment extends Fragment {
     }
 
     public void LoadingData() {
-        progressBarNews.setVisibility(View.VISIBLE);
+
 
         Date c = Calendar.getInstance().getTime();
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MMM-dd", Locale.getDefault());
@@ -86,12 +83,10 @@ public class HomeFragment extends Fragment {
             @Override
             public void onResponse(@NotNull Call<News> call, @NotNull Response<News> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    //News newsList = response.body();
                     List<Article> article = response.body().getArticles();
                     articleList.addAll(article);
 
                     newsAdapter.setmRecentModels(articleList);
-                    progressBarNews.setVisibility(View.INVISIBLE);
 
                     newsAdapter.setOnItemClickListener(new OnItemClickListener() {
                         @Override
@@ -99,7 +94,6 @@ public class HomeFragment extends Fragment {
                             Article a=articleList.get(position);
 
                             Intent intent=new Intent(getActivity(), NewsDetailsActivity.class);
-                            intent.putExtra("author",a.getAuthor());
                             intent.putExtra("image",a.getUrlToImage());
                             intent.putExtra("title",a.getTitle());
                             intent.putExtra("desc",a.getDescription());
@@ -110,16 +104,6 @@ public class HomeFragment extends Fragment {
                     });
 
 
-//                   newsAdapter.notifyDataSetChanged();
-//                    Log.e("tag","success");
-                    Log.e("tag",response.body().toString());
-                    Log.e("taglist",articleList.toString());
-                    //    Log.e("tag_title",articleList.get(0).getAuthor());
-
-                    Log.e("tag2",response.toString());
-
-                }else{
-                    Log.e("tag","no success");
 
                 }
 
@@ -127,9 +111,8 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void onFailure(Call<News> call, Throwable t) {
-                // Snackbar.make(getView(), t.getMessage(), Snackbar.LENGTH_LONG).show();
                 t.printStackTrace();
-                progressBarNews.setVisibility(View.VISIBLE);
+
 
             }
         });

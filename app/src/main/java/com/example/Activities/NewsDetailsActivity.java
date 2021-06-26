@@ -13,7 +13,6 @@ import com.bumptech.glide.Glide;
 import com.example.cloudproject.R;
 
 public class NewsDetailsActivity extends AppCompatActivity {
-    TextView textViewAuthor;
     TextView textViewTitle;
     TextView textViewDate;
     TextView textViewDesc;
@@ -24,20 +23,17 @@ public class NewsDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_news_details);
-        textViewAuthor =findViewById(R.id.details_author);
         textViewTitle =findViewById(R.id.details_title);
         textViewDesc =findViewById(R.id.details_desc);
         textViewDate =findViewById(R.id.details_date);
         imageView =findViewById(R.id.details_image);
 
-        String author = getIntent().getStringExtra("author");
         String title = getIntent().getStringExtra("title");
         String desc = getIntent().getStringExtra("desc");
         String date = getIntent().getStringExtra("date");
         String image = getIntent().getStringExtra("image");
 
         textViewTitle.setText(title);
-        textViewAuthor.setText(author);
         textViewDesc.setText(desc);
         textViewDate.setText(date);
 

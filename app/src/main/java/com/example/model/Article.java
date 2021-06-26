@@ -5,11 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class Article {
 
-    @SerializedName("author")
-    @Expose
-    private String author;
-    @SerializedName("title")
-    @Expose
+
     private String title;
     @SerializedName("description")
     @Expose
@@ -27,13 +23,7 @@ public class Article {
     @Expose
     private String content;
 
-    public String getAuthor() {
-        return author;
-    }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
 
     public String getTitle() {
         return title;

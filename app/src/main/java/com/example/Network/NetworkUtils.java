@@ -9,14 +9,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NetworkUtils {
 
     String BASE_URL="https://newsapi.org/v2/";
-    private Context context;
     private  com.example.Network.ApiInterface apiInterface;
     public NetworkUtils(Context context){
-        this.context=context;
-        HttpLoggingInterceptor httpLoggingInterceptor=new HttpLoggingInterceptor();
-        httpLoggingInterceptor.level(HttpLoggingInterceptor.Level.BODY);
-        OkHttpClient okHttp=new OkHttpClient.Builder().addInterceptor(httpLoggingInterceptor).build();
-        Retrofit retrofit=new Retrofit.Builder().baseUrl(BASE_URL).client(okHttp)
+        Retrofit retrofit=new Retrofit.Builder().baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create() ).build();
         apiInterface = retrofit.create(ApiInterface.class);
     }

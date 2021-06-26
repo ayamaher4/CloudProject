@@ -9,8 +9,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.Activities.SignInActivity;
-import com.example.Fragments.AboutFragment;
 import com.example.Fragments.HomeFragment;
 import com.example.Fragments.ProfileFragment;
 import com.example.Fragments.VideoFragment;
@@ -40,9 +38,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navigation_Videos:
                         openFragment(new VideoFragment());
                         return true;
-                  /*  case R.id.navigation_About:
-                        openFragment(new AboutFragment());
-                        return true;*/
                     case R.id.navigation_Profile:
                         openFragment(new ProfileFragment());
                         return true;
@@ -55,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
     public void openFragment(Fragment fragment){
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-//        HomeFragment homeFragment = new HomeFragment();
-//        HomeFragment homeFragment = new HomeFragment();
         ft.replace(R.id.clContainer, fragment);
         ft.addToBackStack(null);
         ft.commit();

@@ -93,7 +93,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.newsViewHolder
 
         public void onBind(Article item) {
             textViewtitle.setText(item.getTitle());
-            textViewAuthor.setText(item.getAuthor());
             textViewDate.setText(item.getPublishedAt());
             imageViewShare.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -111,7 +110,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.newsViewHolder
                     .centerCrop().error(R.drawable.home)
                     .into(imageViewNews);
 
-//     Glide.with(imageViewNews).load(item.getUrlToImage()).error(R.drawable.homeicon).into(imageViewNews);
 
         }
     }

@@ -10,15 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/details_author"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="وكالة شهاب"
-            android:textAlignment="viewEnd"
-            android:textColor="@color/purple_500"
-            android:textSize="25sp"
-            android:layout_margin="12dp" />
+
 
         <ImageView
             android:id="@+id/details_image"

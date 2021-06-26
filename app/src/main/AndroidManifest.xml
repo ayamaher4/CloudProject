@@ -19,8 +19,6 @@
 <!--            android:required="false" />-->
 
 
-        <activity android:name="com.example.Activities.SettingsActivity" />
-        <activity android:name="com.example.Activities.AboutActivity" />
         <activity android:name="com.example.Activities.NewsDetailsActivity" />
         <activity android:name=".MainActivity"/>
         <activity android:name="com.example.Activities.SignInActivity"/>
